@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stopwatch</title>
+	<meta  name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script type="text/javascript" src="./main.js"></script>
+</head>
+<body onload="domLoaded()">
+<h3 class="text-center text-primary">Start your timer</h3>
+	<div class="col-xs-12">
+		<div class="col-sm-6 form-group">
+			<input type="number" id="duration" class="form-control" placeholder="Duration time">
+		</div>
+		<div class="col-sm-6 form-group">
+			<input type="number" id="breaktime" class="form-control" placeholder="Break time">
+		</div>
+		<div class="col-sm-4 col-sm-offset-4 text-center">
+			<button type="button" id="start_duration" class="btn btn-primary">Start</button>	
+		</div>
+		
+	</div>
+	<div class="col-xs-12 timer_outer">		
+		<div class="col-xs-6 col-xs-offset-3 col-md-3 col-md-offset-5 timer" id="timer_clock">			
+			<div class="dial" id="dialpin"></div>
+			<div class="staticpin"></div>
+			<p id="show_time">MM:SS</p>
+		</div>				
+	</div>	
+</body>
+</html>

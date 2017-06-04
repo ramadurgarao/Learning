@@ -1,0 +1,51 @@
+.timer {
+			border: 1px solid gray; 
+			border-radius:50%;
+			padding-bottom:50%;
+			background-color: #191321;
+		}
+		#show_time {
+			font-weight: bold;
+		    color: #fff;
+		    font-size: 200%;
+		    position: absolute;
+		    top: 71%;
+		    left: 43%;
+		}
+		.dial {
+			width:0%;
+			height:49%;
+			border:1px solid #fff;
+			padding-bottom:50%;
+			position: absolute;
+			left:50%;
+			transition: transform 1s linear;
+			transform-origin: bottom;
+			transform: rotate(0deg);
+		}
+		.staticpin {
+			width:0%;
+			height:49%;
+			border:1px solid #ff0000;
+			padding-bottom:50%;
+			position: absolute;
+			left:50%;
+		}
+		.timer_outer {
+			padding-top:5%;
+		}
+@keyframes rotation {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+		@media screen and (min-width:992px) {
+			.timer {
+				padding-bottom:25%;
+			}
+		}
+		@media screen and (max-width:768px) {
+			.timer {
+				font-size:8px;
+			}
+			
+		}
